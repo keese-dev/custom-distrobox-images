@@ -8,10 +8,10 @@ chezmoi
 # cosign
 dbus-x11
 direnv
-rust-eza
+# rust-eza
 ffmpeg
 fzf
-github-cli
+# github-cli
 helix
 just
 make
@@ -24,7 +24,7 @@ plocate
 python3
 ripgrep
 speedtest-cli
-starship
+# starship
 vimdiff
 wl-clipboard
 # zellij
