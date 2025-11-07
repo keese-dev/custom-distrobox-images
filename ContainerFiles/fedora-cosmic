@@ -2,14 +2,14 @@ FROM quay.io/fedora/fedora-toolbox:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="An example ContainerFile to demonstrate multiple image builds." \
-      maintainer="faeizmahrus@outlook.com"
+      summary="A fedora distro with cosmic" \
+      maintainer="caden@keese.dev"
 
 # Copy the setup scripts and package list
-COPY ../scripts/fedora-example.sh /
+COPY ../scripts/fedora-cosmic.sh /
 COPY ../scripts/distrobox-shims.sh /
-COPY ../packages/fedora-example.packages /
+COPY ../packages/fedora-cosmic.packages /
 
 # Run the setup scripts
-RUN chmod +x fedora-example.sh distrobox-shims.sh && /fedora-example.sh
-RUN rm /fedora-example.sh /distrobox-shims.sh /fedora-example.packages
+RUN chmod +x fedora-example.sh distrobox-shims.sh && /fedora-cosmic.sh
+RUN rm /fedora-cosmic.sh /distrobox-shims.sh /fedora-cosmic.packages
