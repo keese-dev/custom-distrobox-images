@@ -4,11 +4,11 @@ atuin
 btop
 bat
 chezmoi
-clipboard
-cosign
+# clipboard
+# cosign
 dbus-x11
 direnv
-eza
+rust-eza
 ffmpeg
 fzf
 github-cli
@@ -27,7 +27,7 @@ speedtest-cli
 starship
 vimdiff
 wl-clipboard
-zellij
+# zellij
 zstd
 
 # cosmic packages
